@@ -11,7 +11,7 @@ object Playground {
     fun main(args: Array<String>) {
         val converter = Converter(
                 Thread.currentThread().contextClassLoader.getResourceAsStream("images/fresh-rose-stem.jpg"),
-                LightnessApproximator(CharScale.BASE_9),
+                LightnessApproximator(CharScale.LIGHTNESS),
                 FontSize(8, 14))
 
         print(converter.toAscii())

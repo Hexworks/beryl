@@ -8,7 +8,7 @@ Beryl is a pixel image to ASCII art converter.
 ```kotlin
 val converter = Converter(
         File("path/to/your/image.jpg").inputStream(),
-        LightnessApproximator(CharScale.BASE_9),
+        LightnessApproximator(CharScale.BASE9),
         FontSize(8, 14))
 
 print(converter.toAscii())
